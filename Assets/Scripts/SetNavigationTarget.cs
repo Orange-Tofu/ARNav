@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SetNavigationTarget : MonoBehaviour
 {
@@ -9,14 +10,14 @@ public class SetNavigationTarget : MonoBehaviour
     [SerializeField]
     private GameObject navTargetObject;
 
-    private UnityEngine.AI.NavMeshPath path; //current calculated path
+    private NavMeshPath path; //current calculated path
     private LineRenderer line;
 
     private bool lineToggle = false;
     // Start is called before the first frame update
     private void Start()
     {
-        path = new UnityEngine.AI.NavMeshPath();
+        path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
     }
 
@@ -27,10 +28,14 @@ public class SetNavigationTarget : MonoBehaviour
             lineToggle = !lineToggle;
         }
         if(lineToggle){
-            UnityEngine.AI.NavMesh.CalculatePath(transform.position, navTargetObject.transform.position, UnityEngine.AI.NavMesh.AllAreas, path);
+            NavMesh.CalculatePath(transform.position, navTargetObject.transform.position, NavMesh.AllAreas, path);
             line.positionCount = path.corners.Length;
             line.SetPositions(path.corners);
-            line.enables=true;
+<<<<<<< HEAD
+            line.enabled=true;
+=======
+            line.enabled = true;
+>>>>>>> 6f4829238389073b62c3170cc5459908e3fd9026
         }
     }
 }

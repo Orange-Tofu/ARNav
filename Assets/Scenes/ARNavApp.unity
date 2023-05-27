@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 17625814}
   - component: {fileID: 17625813}
   - component: {fileID: 17625812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 567
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 31140054}
   - component: {fileID: 31140053}
   - component: {fileID: 31140052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 103176583}
   - component: {fileID: 103176582}
   - component: {fileID: 103176581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 498956252}
   - component: {fileID: 498956251}
   - component: {fileID: 498956250}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 554334769}
   - component: {fileID: 554334768}
   - component: {fileID: 554334767}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 691968729}
   - component: {fileID: 691968728}
   - component: {fileID: 691968727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 772865875}
   - component: {fileID: 772865874}
   - component: {fileID: 772865873}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1394,7 +1394,7 @@ GameObject:
   - component: {fileID: 774301804}
   - component: {fileID: 774301803}
   - component: {fileID: 774301802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 795153397}
   - component: {fileID: 795153396}
   - component: {fileID: 795153395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1588,7 +1588,7 @@ GameObject:
   - component: {fileID: 811517162}
   - component: {fileID: 811517161}
   - component: {fileID: 811517160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1685,7 +1685,7 @@ GameObject:
   - component: {fileID: 882234450}
   - component: {fileID: 882234449}
   - component: {fileID: 882234448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1794,7 +1794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897551896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.67, y: 0, z: -1.02}
+  m_LocalPosition: {x: 2.67, y: -1, z: -1.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 1101914093}
   - component: {fileID: 1101914092}
   - component: {fileID: 1101914091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2093,7 +2093,7 @@ GameObject:
   - component: {fileID: 1150225913}
   - component: {fileID: 1150225912}
   - component: {fileID: 1150225911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 1202941925}
   - component: {fileID: 1202941924}
   - component: {fileID: 1202941923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2388,7 +2388,7 @@ GameObject:
   - component: {fileID: 1490241313}
   - component: {fileID: 1490241312}
   - component: {fileID: 1490241311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,6 +2639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fac94c657905b468f4309409163e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topDownCamera: {fileID: 26720854}
+  navTargetObject: {fileID: 538680190}
 --- !u!1 &1547248562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,7 +2653,7 @@ GameObject:
   - component: {fileID: 1547248566}
   - component: {fileID: 1547248565}
   - component: {fileID: 1547248564}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2748,7 +2750,7 @@ GameObject:
   - component: {fileID: 1852836579}
   - component: {fileID: 1852836578}
   - component: {fileID: 1852836577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2845,7 +2847,7 @@ GameObject:
   - component: {fileID: 2076282900}
   - component: {fileID: 2076282899}
   - component: {fileID: 2076282898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
