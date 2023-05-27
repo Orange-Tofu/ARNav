@@ -31,11 +31,7 @@ public class SetNavigationTarget : MonoBehaviour
             NavMesh.CalculatePath(transform.position, navTargetObject.transform.position, NavMesh.AllAreas, path);
             line.positionCount = path.corners.Length;
             line.SetPositions(path.corners);
-<<<<<<< HEAD
-            line.enabled=true;
-=======
             line.enabled = true;
->>>>>>> 6f4829238389073b62c3170cc5459908e3fd9026
         }
     }
 }
