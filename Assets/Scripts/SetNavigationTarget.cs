@@ -13,7 +13,7 @@ public class SetNavigationTarget : MonoBehaviour
     private NavMeshPath path; //current calculated path
     private LineRenderer line;
 
-    private bool lineToggle = false;
+    private bool lineToggle = true;
     // Start is called before the first frame update
     private void Start()
     {
