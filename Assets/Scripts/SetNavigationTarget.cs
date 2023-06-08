@@ -30,6 +30,8 @@ public class SetNavigationTarget : MonoBehaviour
         if(lineToggle && targetPosition!= Vector3.zero){
             NavMesh.CalculatePath(transform.position,targetPosition,NavMesh.AllAreas,path);
             Debug.Log(path.status);
+            De(transform.position.ToString());
+            De(targetPosition.ToString());
 	        line.positionCount = path.corners.Length;
 	        line.SetPositions(path.corners);
         }
@@ -48,5 +50,10 @@ public class SetNavigationTarget : MonoBehaviour
     public void ToogleVisibility(){
 	    lineToggle=!lineToggle;
 	    line.enabled=lineToggle;
+    }
+
+
+    public void De(string msg) {
+        Debug.Log(msg);
     }
 }
