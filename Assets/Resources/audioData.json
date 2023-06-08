@@ -1,0 +1,16 @@
+{
+  "audioClips": [
+    {
+      "condition": "Condition1",
+      "audioSource": "AudioClip1"
+    },
+    {
+      "condition": "Condition2",
+      "audioSource": "AudioClip2"
+    },
+    {
+      "condition": "Condition2",
+      "audioSource": "AudioClip2"
+    }
+  ]
+}

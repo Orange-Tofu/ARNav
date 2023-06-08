@@ -1,0 +1,16 @@
+{
+    "SoundMappingData": [
+        {
+            "tagName": "Destination",
+            "sound": "SoundEffects/Destination.mp3"
+        },
+        {
+            "tagName": "Left",
+            "sound": "SoundEffects/Left.mp3"
+        },
+        {
+            "tagName": "Right",
+            "sound": "SoundEffects/Right.mp3"
+        }
+    ]
+}
