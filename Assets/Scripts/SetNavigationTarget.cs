@@ -22,12 +22,17 @@ public class SetNavigationTarget : MonoBehaviour
 
     public string directionF;
 
+    public string objectTag = "Targets";
+    private GameObject[] targetObjects;
+    private Renderer[] meshRenderers;
+
     // Start is called before the first frame update
     private void Start()
     {
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
 	    line.enabled = lineToggle;
+        // disableAllCubes();
         SetCurrentNavigationTarget(0);
     }
 
@@ -51,12 +56,16 @@ public class SetNavigationTarget : MonoBehaviour
     }
 
     public void SetCurrentNavigationTarget(int selectedValue){
+        disableAllCubes();
 	    targetPosition=Vector3.zero;
 	    string selectedText=navigationTargetDropDown.options[selectedValue].text;
 	    Target currentTarget=navigationTargetObjects.Find(x=> x.Name.Equals(selectedText));
 	    if(currentTarget!=null){
 	        targetPosition=currentTarget.PositionObject.transform.position;
 	    }
+
+        MeshRenderer meshRenderer = currentTarget.PositionObject.GetComponent<MeshRenderer>();
+        meshRenderer.enabled = true;
     }
 
 
@@ -75,7 +84,7 @@ public class SetNavigationTarget : MonoBehaviour
     {
         Debug.Log("3");
         // Assuming you have a reference to objB in the scene
-        objB = GameObject.Find("DirectionCollider");
+        objB = GameObject.FindWithTag("DirectionHandler");
         scriptB = objB.GetComponent<TriggerSoundController>();
 
         // Subscribe to the event in ScriptB
@@ -126,6 +135,35 @@ public class SetNavigationTarget : MonoBehaviour
             Debug.Log(direction.ToString());
             Debug.Log(transform.forward.ToString());
             scriptB.playAudio(directionF);
+        }
+    }
+
+    private void disableAllCubes() {
+        // GameObject tempObj;
+        targetObjects = GameObject.FindGameObjectsWithTag("Targets");
+
+        // for (tempObj in targetObjects) {
+            
+        // }
+        if (targetObjects.Length > 0)
+        {
+            // Initialize the array to store the Mesh Renderer components
+            meshRenderers = new Renderer[targetObjects.Length];
+
+            // Loop through all the target objects
+            for (int i = 0; i < targetObjects.Length; i++)
+            {
+                // Check if the current target object has a Mesh Renderer component
+                meshRenderers[i] = targetObjects[i].GetComponent<Renderer>();
+
+                // Check if the Mesh Renderer component is valid and exists on the target object
+                if (meshRenderers[i] != null)
+                {
+                    if (meshRenderers[i].enabled == true){
+                        meshRenderers[i].enabled = false;
+                    }
+                }
+            }
         }
     }
 }
