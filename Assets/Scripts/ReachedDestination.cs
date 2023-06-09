@@ -19,10 +19,11 @@ public class ReachedDestination : MonoBehaviour
     {
         
         // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
-
-        if (other.CompareTag("Mover"))
+        Debug.Log("aa");
+        if (other.CompareTag("Targets"))
         {
             // Play the audio clip
+            Debug.Log("baba");
             audioSource.Play();
         }
     }
