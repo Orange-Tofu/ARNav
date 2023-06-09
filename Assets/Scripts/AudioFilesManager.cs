@@ -8,7 +8,8 @@ public class AudioFilesManager : MonoBehaviour
 {
     public AudioClip sound_Left; // Sound for tag T1
     public AudioClip sound_Right;
-    public AudioClip sound_Destination;
+    public AudioClip sound_Forward;
+    public AudioClip sound_Backward;
     public AudioClip sound_default; // Sound for tag T2
     // Add more AudioClip variables for additional tags
 
@@ -22,8 +23,10 @@ public class AudioFilesManager : MonoBehaviour
                 return sound_Left;
             case "Right":
                 return sound_Right;
-            case "Destination":
-                return sound_Destination;
+            case "Forward":
+                return sound_Forward;
+            case "Backward":
+                return sound_Backward;
             default:
                 return sound_default;
             // Add more cases for additional tags and corresponding sounds

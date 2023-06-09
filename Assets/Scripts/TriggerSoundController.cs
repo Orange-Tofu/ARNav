@@ -27,9 +27,10 @@ public class TriggerSoundController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
-
+        Debug.Log("1");
         if (other.CompareTag("Mover"))
         {
+            Debug.Log("2");
             tagName = other.tag;
             MyEvent?.Invoke();
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,7 +476,7 @@ Transform:
   - {fileID: 921891409}
   - {fileID: 802771314}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74381229
 GameObject:
@@ -887,7 +887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171925024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0.041771214, z: -6.47}
+  m_LocalPosition: {x: 0.34, y: 0.041771214, z: -6.8}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1514,6 +1514,7 @@ MonoBehaviour:
     PositionObject: {fileID: 426007882}
   - Name: Down Stairs
     PositionObject: {fileID: 1293492668}
+  directionF: 
 --- !u!1 &291356612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,7 +4992,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &1301582248
 SphereCollider:
@@ -5063,13 +5064,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301582246}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.4, z: 2.77}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.57327336, z: 0.18}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1301582252
 Rigidbody:
@@ -6465,7 +6466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound_Left: {fileID: 8300000, guid: 7e9717cf10e43804e8c7faad04ab8848, type: 3}
   sound_Right: {fileID: 8300000, guid: 3ba5b429fa111b140ad79efb9b113226, type: 3}
-  sound_Destination: {fileID: 8300000, guid: 5ca080612b7ee3149b5d282a382f781c, type: 3}
+  sound_Forward: {fileID: 8300000, guid: 845ce32e4e5840a48b94291f6867a212, type: 3}
+  sound_Backward: {fileID: 8300000, guid: b56878f611f5f34408b7e0be3fc9ee6d, type: 3}
   sound_default: {fileID: 8300000, guid: 2e81b87c0d6df7347b58ba499d8fb464, type: 3}
 --- !u!1 &1780337834
 GameObject:
