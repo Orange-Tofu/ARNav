@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 46564590}
   - component: {fileID: 46564589}
   - component: {fileID: 46564588}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: DirectionCollider (2)
   m_TagString: DirectionHandler
   m_Icon: {fileID: 0}
@@ -2478,7 +2478,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 2
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3396,7 +3396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 720616876}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Directions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5360,7 +5360,7 @@ GameObject:
   - component: {fileID: 1280944504}
   - component: {fileID: 1280944503}
   - component: {fileID: 1280944502}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: DirectionCollider (1)
   m_TagString: DirectionHandler
   m_Icon: {fileID: 0}
@@ -7866,7 +7866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776986147}
   - component: {fileID: 1776986148}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
