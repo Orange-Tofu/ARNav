@@ -18,7 +18,7 @@ public class SetNavigationTarget : MonoBehaviour
     private bool lineToggle = false;
 
     private GameObject objB;
-    private TriggerSoundController scriptB;
+    private SoundController scriptSound;
 
     public string directionF;
 
@@ -80,17 +80,17 @@ public class SetNavigationTarget : MonoBehaviour
     }
 
 
-    private void Awake()
-    {
-        Debug.Log("3");
-        // Assuming you have a reference to objB in the scene
-        objB = GameObject.FindWithTag("DirectionHandler");
-        scriptB = objB.GetComponent<TriggerSoundController>();
+    // private void Awake()
+    // {
+    //     Debug.Log("3");
+    //     // Assuming you have a reference to objB in the scene
+    //     objB = GameObject.FindWithTag("DirectionHandler");
+    //     scriptB = objB.GetComponent<TriggerSoundController>();
 
-        // Subscribe to the event in ScriptB
-        scriptB.MyEvent += CalculateWaypoint;
-        // Debug.Log("Alright");
-    }
+    //     // Subscribe to the event in ScriptB
+    //     scriptB.MyEvent += CalculateWaypoint;
+    //     // Debug.Log("Alright");
+    // }
 
     public void CalculateWaypoint()
     {
@@ -134,7 +134,7 @@ public class SetNavigationTarget : MonoBehaviour
             Debug.Log(angle.ToString());
             Debug.Log(direction.ToString());
             Debug.Log(transform.forward.ToString());
-            scriptB.playAudio(directionF);
+            scriptSound.playAudio(directionF);
         }
     }
 
@@ -164,6 +164,18 @@ public class SetNavigationTarget : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
+        Debug.Log("1");
+        if (other.CompareTag("DirectionHandler"))
+        {
+            Debug.Log("HeHE2");
+            CalculateWaypoint();
+            De("6");
         }
     }
 }
