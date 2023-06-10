@@ -32,6 +32,7 @@ public class SetNavigationTarget : MonoBehaviour
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
 	    line.enabled = lineToggle;
+        scriptSound = GetComponent<SoundController>();
         // disableAllCubes();
         SetCurrentNavigationTarget(0);
     }
