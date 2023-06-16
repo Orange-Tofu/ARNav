@@ -3,7 +3,7 @@
 Project Name: AR Indoor Navigation with Unity and ARCore
 
 Description:
-This project is an indoor navigation application developed using Unity and ARCore. It enables users to navigate through indoor spaces without the need for physical markers or beacons. Leveraging computer vision techniques, the app tracks the user's position in real-time using the device's camera feed. The application utilizes a blueprint-based approach to create virtual representations of indoor environments and generates a NavMesh for accurate pathfinding. Alongside visual cues, the project incorporates immersive audio instructions to guide users throughout their desired routes. With its markerless navigation, real-time position tracking, and immersive audio features, this project provides a seamless and intuitive indoor navigation experience.
+This project is an indoor navigation application developed using Unity and ARCore. It enables users to navigate through indoor spaces without the need for physical markers or beacons. Leveraging computer vision techniques, the app tracks the user's position in real-time using the device's camera feed. The application utilizes a blueprint-based approach to create virtual representations of indoor environments and generates a NavMesh for accurate pathfinding. Alongside visual cues, the project incorporates immersive audio instructions to guide users throughout their desired routes. With its markerless navigation, real-time position tracking, and immersive audio features, this project provides a seamless and intuitive indoor navigation experience..
 
 Features:
 - Markerless Indoor Navigation
