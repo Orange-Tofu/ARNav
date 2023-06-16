@@ -20,7 +20,7 @@ public class ReachedDestination : MonoBehaviour
         
         // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
 
-        if (other.CompareTag("Mover"))
+        if (other.CompareTag("Targets"))
         {
             // Play the audio clip
             audioSource.Play();
