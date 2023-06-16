@@ -67,6 +67,12 @@ public class SetNavigationTarget : MonoBehaviour
 
         MeshRenderer meshRenderer = currentTarget.PositionObject.GetComponent<MeshRenderer>();
         meshRenderer.enabled = true;
+
+        BoxCollider boxCollider = currentTarget.PositionObject.GetComponent<BoxCollider>();
+        if (boxCollider != null)
+        {
+            boxCollider.enabled = true;
+        }
     }
 
 
@@ -163,6 +169,12 @@ public class SetNavigationTarget : MonoBehaviour
                     if (meshRenderers[i].enabled == true){
                         meshRenderers[i].enabled = false;
                     }
+                }
+
+                Collider collider = targetObjects[i].GetComponent<BoxCollider>();
+                if (collider != null)
+                {
+                    collider.enabled = false;
                 }
             }
         }
