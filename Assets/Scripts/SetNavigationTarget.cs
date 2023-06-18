@@ -73,6 +73,8 @@ public class SetNavigationTarget : MonoBehaviour
         {
             boxCollider.enabled = true;
         }
+
+        CalculateWaypoint();
     }
 
 
@@ -126,7 +128,7 @@ public class SetNavigationTarget : MonoBehaviour
                 // Turn right
                 directionF = "Right";
             }
-            else if (direction.magnitude > 1f)
+            else if (direction.magnitude > 1f && (angle > -45f && angle < 45f) )
             {
                 // Go straight
                 directionF = "Forward";
