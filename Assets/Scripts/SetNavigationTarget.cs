@@ -84,11 +84,6 @@ public class SetNavigationTarget : MonoBehaviour
     }
 
 
-    public void De(string msg) {
-        Debug.Log(msg);
-    }
-
-
     // private void Awake()
     // {
     //     Debug.Log("3");
@@ -190,7 +185,6 @@ public class SetNavigationTarget : MonoBehaviour
         {
             Debug.Log("HeHE2");
             CalculateWaypoint();
-            De("6");
         }
     }
 }
