@@ -32,14 +32,16 @@ public class AudioFilesManager : MonoBehaviour
         }
     }
 
-    public void DebugLog(string message)
-    {
-        Debug.Log(message);
-        LogViewer logViewer = FindObjectOfType<LogViewer>();
-        if (logViewer != null)
-        {
-            logViewer.HandleLogMessage(message, string.Empty, LogType.Log);
-        }
-    }
+    // Uncomment this function only for visual debugging
+
+    // public void DebugLog(string message)
+    // {
+    //     Debug.Log(message);
+    //     LogViewer logViewer = FindObjectOfType<LogViewer>();
+    //     if (logViewer != null)
+    //     {
+    //         logViewer.HandleLogMessage(message, string.Empty, LogType.Log);
+    //     }
+    // }
 
 }
