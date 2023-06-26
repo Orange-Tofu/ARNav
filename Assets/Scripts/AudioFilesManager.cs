@@ -6,17 +6,15 @@ using UnityEngine;
 
 public class AudioFilesManager : MonoBehaviour
 {
-    public AudioClip sound_Left; // Sound for tag T1
+    public AudioClip sound_Left; 
     public AudioClip sound_Right;
     public AudioClip sound_Forward;
     public AudioClip sound_Backward;
-    public AudioClip sound_default; // Sound for tag T2
-    // Add more AudioClip variables for additional tags
+    public AudioClip sound_default; 
 
     public AudioClip GetAudioClipForTag(string tag)
     {
         // Return the appropriate audio clip based on the tag
-        // DebugLog(tag);
         switch (tag)
         {
             case "Left":
