@@ -33,7 +33,6 @@ public class AudioFilesManager : MonoBehaviour
         }
 
         // If no audio clip found for the tag, return null
-        return null;
     }
 
     public void DebugLog(string message)
