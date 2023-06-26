@@ -29,10 +29,9 @@ public class AudioFilesManager : MonoBehaviour
                 return sound_Backward;
             default:
                 return sound_default;
-            // Add more cases for additional tags and corresponding sounds
+        
+            // Return a ding sound effect to indicate something went wrong and can also be used for debugging
         }
-
-        // If no audio clip found for the tag, return null
     }
 
     public void DebugLog(string message)
