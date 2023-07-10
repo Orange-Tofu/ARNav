@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class AudioFilesManager : MonoBehaviour
 {
+    // These are the variable handler for the audio clips
     public AudioClip sound_Left; 
     public AudioClip sound_Right;
     public AudioClip sound_Forward;
@@ -27,8 +28,8 @@ public class AudioFilesManager : MonoBehaviour
                 return sound_Backward;
             default:
                 return sound_default;
+                // Return a ding sound effect to indicate something went wrong and can also be used for debugging
         
-            // Return a ding sound effect to indicate something went wrong and can also be used for debugging
         }
     }
 

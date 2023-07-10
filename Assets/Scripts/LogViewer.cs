@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+// This scripts is purely used for visual debugging, i.e. it will show the log files in AR mode.
+// This helps in seeing the debuglog while moving around and using the app in your mobile.
+// To use this script attach a text element to canvas and in other scripts call DebugLog function.
 public class LogViewer : MonoBehaviour
 {
     public Text logText;
