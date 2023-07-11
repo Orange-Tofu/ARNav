@@ -1,3 +1,6 @@
+// Script to check if the indicator cube collides with target objects or not and if yes then play the 
+// reached destination audio clip.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,11 +18,10 @@ public class ReachedDestination : MonoBehaviour
         audioSource.clip = destination_Sound;
     }
 
+    // Function to check for collision and play the appropriate audio if condition satisfied.
     void OnTriggerEnter(Collider other)
     {
-        
-        // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
-
+        // Only trigger if the object it collided with is the target object denoted by its tag name.
         if (other.CompareTag("Targets"))
         {
             // Play the audio clip
