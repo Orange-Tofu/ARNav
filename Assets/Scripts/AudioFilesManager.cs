@@ -1,7 +1,9 @@
+// This Script manages thr audio files by collecting them in one place and then returns appropriate audio files
+// back to calling function. This helps maintain and easily switch in-out a audio file without changing two much things.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 
 
 public class AudioFilesManager : MonoBehaviour
@@ -13,9 +15,9 @@ public class AudioFilesManager : MonoBehaviour
     public AudioClip sound_Backward;
     public AudioClip sound_default; 
 
+    // This function returns the audio clip based on the tag name
     public AudioClip GetAudioClipForTag(string tag)
     {
-        // Return the appropriate audio clip based on the tag
         switch (tag)
         {
             case "Left":
