@@ -33,7 +33,6 @@ public class SetNavigationTarget : MonoBehaviour
         line = transform.GetComponent<LineRenderer>();
 	    line.enabled = lineToggle;
         scriptSound = GetComponent<SoundController>();
-        // disableAllCubes();
         SetCurrentNavigationTarget(0);
     }
 
@@ -50,8 +49,6 @@ public class SetNavigationTarget : MonoBehaviour
         // }
         NavMesh.CalculatePath(transform.position,targetPosition,NavMesh.AllAreas,path);
         Debug.Log(path.status);
-        // De(transform.position.ToString());
-        // De(targetPosition.ToString());
         line.positionCount = path.corners.Length;
         line.SetPositions(path.corners);
     }
@@ -98,11 +95,7 @@ public class SetNavigationTarget : MonoBehaviour
 
     public void CalculateWaypoint()
     {
-        // Debug.Log("called");
         Update();
-        Debug.Log("4");
-        // Debug.Log("calledw");
-        // Debug.Log(path.corners.Length);
         if (path.corners.Length >= 2)
         {
             Debug.Log("5");
@@ -180,10 +173,8 @@ public class SetNavigationTarget : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
-        Debug.Log("1");
         if (other.CompareTag("DirectionHandler"))
         {
-            Debug.Log("HeHE2");
             CalculateWaypoint();
         }
     }
