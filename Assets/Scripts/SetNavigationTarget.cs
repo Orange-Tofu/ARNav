@@ -80,7 +80,7 @@ public class SetNavigationTarget : MonoBehaviour
 	    line.enabled=lineToggle;
     }
 
-
+    // This is an old method no longer used, kept for future uses.
     // private void Awake()
     // {
     //     Debug.Log("3");
@@ -127,10 +127,10 @@ public class SetNavigationTarget : MonoBehaviour
                 directionF = "Backward";
             }
 
-            Debug.Log(directionF);
-            Debug.Log(angle.ToString());
-            Debug.Log(direction.ToString());
-            Debug.Log(transform.forward.ToString());
+            // Debug.Log(directionF);
+            // Debug.Log(angle.ToString());
+            // Debug.Log(direction.ToString());
+            // Debug.Log(transform.forward.ToString());
             scriptSound.playAudio(directionF);
         }
     }
@@ -171,6 +171,7 @@ public class SetNavigationTarget : MonoBehaviour
         }
     }
 
+    // This function checks if the indicator object collides with the direction collider or not.
     void OnTriggerEnter(Collider other)
     {
         // SphereCollider sphereCollider = other.GetComponent<SphereCollider>();
