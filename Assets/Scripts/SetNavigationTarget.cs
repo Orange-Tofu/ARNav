@@ -135,13 +135,12 @@ public class SetNavigationTarget : MonoBehaviour
         }
     }
 
+    // This function is used to disable the meshrenderer & Box Collider component of all the target cubes.
+    // By doing so the cubes become invisible in the AR overlay/output and do not trigger collision based events.
+    // The main purpose is to make all cubes invisible and disable their collider, except for the target cube. 
     private void disableAllCubes() {
-        // GameObject tempObj;
         targetObjects = GameObject.FindGameObjectsWithTag("Targets");
 
-        // for (tempObj in targetObjects) {
-            
-        // }
         if (targetObjects.Length > 0)
         {
             // Initialize the array to store the Mesh Renderer components
@@ -154,6 +153,7 @@ public class SetNavigationTarget : MonoBehaviour
                 meshRenderers[i] = targetObjects[i].GetComponent<Renderer>();
 
                 // Check if the Mesh Renderer component is valid and exists on the target object
+                // This disables the mesh renderer component.
                 if (meshRenderers[i] != null)
                 {
                     if (meshRenderers[i].enabled == true){
@@ -161,6 +161,7 @@ public class SetNavigationTarget : MonoBehaviour
                     }
                 }
 
+                // This disables the box collider component.
                 Collider collider = targetObjects[i].GetComponent<BoxCollider>();
                 if (collider != null)
                 {
