@@ -74,7 +74,7 @@ public class SetNavigationTarget : MonoBehaviour
         CalculateWaypoint();
     }
 
-
+    // This function is used to change the visibilty status of the navigation line.
     public void ToogleVisibility(){
 	    lineToggle=!lineToggle;
 	    line.enabled=lineToggle;
